@@ -1,4 +1,4 @@
-# SyntheticGen v0.1.0
+# SyntheticGen v0.1.1
 
 This is a Python package available on PyPi that creates synthetic datasets for various dataset types.
 
@@ -32,7 +32,7 @@ dataset = aug.getCombinedSet()
 **linearAugmentor(dataset):**\
 This is the augmentor object for psuedo-linear datasets.
 >Dataset Specifications For Proper Function:
- - Must be a numpy array with sub-lists holding inputs and outputs in the same order everytime.
+ - Must be a numpy array with sub-lists holding inputs and outputs in the same order every line.
  - Each sub-list in the dataset must be of equal length to one another
 
 
@@ -74,10 +74,10 @@ This is the method that will perform the operations on the matrix given the inpu
 **linearAugmentor.getCombinedSet():**\
 This method returns the original dataset randomly combined with the newly created augmented data.
 
-**linearAugmentor.getSyntheticData()**
+**linearAugmentor.getSyntheticData()**\
 This method returns only the augmented data creating a fully synthetic dataset.
 
-**linearAugmentor.getInitialDataset()**
+**linearAugmentor.getInitialDataset()**\
 This method returns the originally inputted, unchanged dataset. 
 
 # Roadmap
@@ -86,9 +86,12 @@ This method returns the originally inputted, unchanged dataset.
  - Add more advanced augmentation techniques utilizing eingenvectors.
 >Image Augmentor
  - Add an image augmentor that performs multiple augmentation techniques. 
->Differntial Augmentor
+>Differential Augmentor
  - Experimental augmentor that's currently in production utilizing differential calculus.
 
 # Recent Changes
+v0.1.1
+  - README changes.
+
 v0.1.0
   - Created package and added the linear augmentor.
