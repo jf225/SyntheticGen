@@ -10,7 +10,7 @@ This is a Python package available on PyPi that creates synthetic datasets for v
     pip install syntheticgen
 
 # Usage
-In v0.1.0 there is only a linear augmentor available however, image and experimental augmentation techniques will be available soon.
+In v0.1.1 there is only a linear augmentor available however, image and experimental augmentation techniques will be available soon.
 ```
 #Import a dataset as a numpy array (in this example it is named dataset)
 #Create an augmentor object and initialize it with the dataset
